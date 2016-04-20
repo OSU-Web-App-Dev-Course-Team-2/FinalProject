@@ -67,8 +67,8 @@ body {
 }
 
 nav {
-	background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
-	background-image: linear-gradient(#fff, #ccc);
+	background: -webkit-gradient(linear, center top, center bottom, from(#EBF6FA), to(#808080));
+	background-image: linear-gradient(#EBF6FA, #808080);
 	border-radius: 6px;
 	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
 	padding: 0 10px;
