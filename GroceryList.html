@@ -3,13 +3,12 @@
 	<head>
 		<title>Home Page</title>
 		<!-- Name of the Website -->
-		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' />
-		<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	
 		<link href="mfStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle/css">
-		<link rel="stylesheet" type="text/css" href="CSS/mfTransitionStyle.css">
-		<script src="prefix-free.js"></script>
+
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- CSS and JavaScript file for Navigation -->
 	</head>
 	<body>
@@ -18,56 +17,56 @@
 		A container that can be used to distinguish
 		the content from the backgroud if necessary
 		-->
-			<div id="Navigation">
-				<!--Div for Navigation-->
-				<nav>
-					<ul class="menu">
-						<li><a href="HomePage.html"><span class="HomePage"></span> Home</a></li>
-						<li><a href="#"><span class="iconic "></span> Chicken</a>
-							<ul>
-								<li><a href="PenneChicken.html">Penne with Chicken&Pesto</a></li>
-								<li><a href="ChickenCordonBleu.html">Chicken Cordon Bleu</a></li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="iconic "></span> Beef</a>
-							<ul>
-								<li><a href="Bulgogi.html">Bulgogi</a></li>
-								<li><a href="SteakSirloin.html">Sirloin Steak</a></li>
-								
-							</ul>
-						</li>
-						<li><a href="#"><span class="iconic "></span> Pork</a>
-							<ul>
-								<li><a href="TangyPork.html">Tangy Pork Tenderloin</a></li>
-								<li><a href="BBQPork.html">BBQ Pork for Sandwiches</a></li>
-								
-							</ul>
-						</li>
-						<li><a href="#"><span class="iconic"></span> Vegetarian</a>
-							<ul>
-								<li><a href="Guacamole.html">Guacamole</a></li>
-								<li><a href="MacNCheese.html">Mac&Cheese</a></li>
-							</ul>
-						</li>
+			<div id="navigation">
+			<!--Div for Navigation-->
+			<ul class="w3-navbar w3-card-8 w3-light-grey">
+				<li><a href="HomePage.html">Home</a></li>
+				
 
-						<li><a href="MealPlanner.html"><span class="iconic "></span> Meal Planner</a>
-							<ul>
-								<li><a href="#">Add subtitle if needed </a></li>
-								
-							</ul>
-						</li>
+				<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">Chicken <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="ChickenCordonBleu.html">Chicken Cordon Bleu</a>
+				      <a href="PenneChicken.html">Penne with Chicken and Pesto</a>
+				      
+				    </div>
+				 </li>
 
-						<li><a href="GroceryList.html"><span class="iconic "></span> Grocery List</a>
-							<ul>
-								<li><a href="#">Add Subtitle If Needed</a></li>
-								
-							</ul>
-						</li>
+				 <li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">Beef <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="Bulgogi.html">Bulgogi</a>
+				      <a href="SteakSirloin.html">Steak Sirloin</a>
+				      
+				    </div>
+				 </li>
 
-					</ul>
-					<div class="clearfix"></div>
-				</nav>
-			</div>
+				 <li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">Pork <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="BBQPork.html">BBQ Pork</a>
+				      <a href="TangyPork.html">Tangy Grilled Pork Tenderloin</a>
+				      
+				    </div>
+				 </li>
+
+				 <li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">Vegie <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="Guacamole.html">Guacamole</a>
+				      <a href="MacNCheese.html">Mac and Cheese</a>
+				      
+				    </div>
+				 </li>
+
+				 <li><a href="MealPlanner.html">Meal Planner</a></li>
+
+				 <li><a href="GroceryList.html">Grocery List</a></li>
+			</ul>
+
+			<!-- Code for Navigation -->
+						
+		</div>
 
 			<div id="GroceryListContainer">
 				<!--  -->
