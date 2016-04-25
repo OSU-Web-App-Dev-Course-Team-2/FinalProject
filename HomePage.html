@@ -11,11 +11,10 @@
 
 
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- CSS and JavaScript file for Navigation -->
 	</head>
 	<body>
-		<div id="MainContiner">
+		<div id="MainContiner" class="centered">
 		<!--
 		A container that can be used to distinguish
 		the content from the backgroud if necessary
@@ -67,11 +66,33 @@
 				 <li class="w3-right"><a href="GroceryList.html">Grocery List</a></li>
 			</ul>
 
-			<!-- Code for Navigation -->
-						
-		</div>
-			<div id="ContentContiner">
-				<img src="LogoBig.jpg" alt="Logo">
+			<!-- Code for Navigation -->			
+			</div>
+		
+			<div class="pfdFont centered titleText">
+				<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+				</picture>
+			</div>
+			<div class="container">
+				<ul class="centered">
+					<li>
+						<a href="#">
+							<img src="Photos/Penne-with-chicken-and-pesto.jpg" alt="Penne Chicken with Pesto" width="150" height="150">
+						</a>
+						<a href="#">
+							<img src="Photos/BBQPork.jpg" alt="Barbeque Pork" width="150" height="150">
+						</a>
+						<a href="#">
+							<img src="Photos/Sirloin.jpg" alt="Sirloin" width="150" height="150">
+						</a>
+						<a href="#">
+							<img src="Photos/mnc.jpg" alt="Mac 'N' Cheese" width="150" height="150">
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</body>
