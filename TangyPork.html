@@ -2,22 +2,22 @@
 
 <html>
 <head>
-	<title>Tangy Grilled Pork Tenderloin</title>
+	<title>Tangy Pork</title>
 	<!-- 
 		Title of the page 
 	-->
-		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	
-		<link href="CSS/mfStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/bigNumberStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/mfTransitionStyle.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="CSS/mfStyle.css" rel="stylesheet" type="text/css" />
+		<!--  <link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle.css" /  >-->
+		<link rel="stylesheet" type="text/css" href="CSS/nav.css">
 
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<!-- CSS and JavaScript file for Navigation -->
 </head>
 <body>
-	<div id="MainContiner">
+	<div id="MainContiner" class="centered">
 	<!--
 	A container that can be used to distinguish the content from the backgroud if necessary
 	-->
@@ -46,7 +46,7 @@
 				 </li>
 
 				 <li class="w3-dropdown-hover w3-hover-orange">
-				<a class="w3-hover-orange w3-green" href="#">Pork <i class="fa fa-caret-down"></i></a>
+				<a class="w3-hover-orange w3-green" href="#" >Pork <i class="fa fa-caret-down"></i></a>
 				    <div class="w3-dropdown-content w3-white w3-card-4">
 				      <a href="BBQPork.html">BBQ Pork</a>
 				      <a href="TangyPork.html" class="w3-green">Tangy Grilled Pork Tenderloin</a>
@@ -71,43 +71,54 @@
 			<!-- Code for Navigation -->
 						
 		</div>
-
-		<div id="RecipeName" class="pfdFont">
+		
+		<!-- Div for spacing -->
+		<div style="margin-top:20px;"></div>
+		
+		<div class="pfdFont centered titleText">
+			<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+			</picture>
+		</div>
+		
+		<div id="RecipeName" class="pfdFont centered titleText">
 			<!--Name of the Recipe-->
-			<a>Tangy Grilled Pork Tenderloin</a>
+			<a>Mac 'N' Cheese</a>
+	
 		</div>
 
-		<div id="Image">
-			<img src="Photos/TangyPork.jpg" height="80" width="80">
+		<div class="container">
+			<div id="Image" class="foodPicture roundedPic left">
+				<img src="Photos/TangyPork.jpg">
+			</div>
+
+			<div id="Ingredient" class="right smallText pfdFont">
+				<!-- List of ingredients goes here -->
+				<ul>
+					<li>2 pounds pork tenderloin </li>
+					<li>2/3 cup honey</li> 
+					<li>1/2 cup Dijon mustard</li>
+					<li>1/4 teaspoon chili powder </li>
+					<li>1/4 teaspoon salt</li>
+
+				</ul>
+			</div>
 		</div>
-
-		<div id="Ingredient">
-			<!-- List of ingredients goes here -->
-			<ul>
-				<li>2 pounds pork tenderloin </li>
-				<li>2/3 cup honey</li> 
-				<li>1/2 cup Dijon mustard</li>
-				<li>1/4 teaspoon chili powder </li>
-				<li>1/4 teaspoon salt</li>
-
-				
-			</ul>
-		</div>
-
-		<div id="Directions">
-			<!--Directions of how to cook-->
-			<ol>
-				<li>Place meat in a large resealable plastic bag. In a medium bowl, mix together honey, Dijon mustard, chili powder, and salt. </li>
-				<li>Pour marinade over tenderloins, seal, and refrigerate for at least 4 hours.</li>
-				<li>Prepare the grill for indirect heat.</li>
-				<li>Lightly oil grill grate. Remove meat from marinade, and discard liquid. </li>
-				<li>Grill for 15 to 25 minutes, or until an instant-read thermometer inserted into the center reads 145 degrees F</li>
-				
-
-			</ol>
-			
-		</div>
-
+		
+		
+			<div id="Directions" class="centered centeredText">
+				<!--Directions of how to cook-->
+				<ol class="pfdFont">
+					<li>Place meat in a large resealable plastic bag. In a medium bowl, mix together honey, Dijon mustard, chili powder, and salt. </li>
+					<li>Pour marinade over tenderloins, seal, and refrigerate for at least 4 hours.</li>
+					<li>Prepare the grill for indirect heat.</li>
+					<li>Lightly oil grill grate. Remove meat from marinade, and discard liquid. </li>
+					<li>Grill for 15 to 25 minutes, or until an instant-read thermometer inserted into the center reads 145 degrees F</li>
+				</ol>
+			</div>
+		
 	</div>
 </body>
 </html>

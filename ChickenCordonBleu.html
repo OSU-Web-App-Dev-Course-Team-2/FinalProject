@@ -2,22 +2,22 @@
 
 <html>
 <head>
-	<title>Penne with Chicken and Pesto</title>
+	<title> Chicken Cordon Bleu </title>
 	<!-- 
 		Title of the page 
 	-->
 		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	
-		<link href="CSS/mfStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/bigNumberStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/mfTransitionStyle.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="CSS/mfStyle.css" rel="stylesheet" type="text/css" />
+		<!--  <link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle.css" /  >-->
+		<link rel="stylesheet" type="text/css" href="CSS/nav.css">
 
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<!-- CSS and JavaScript file for Navigation -->
 </head>
 <body>
-	<div id="MainContiner">
+	<div id="MainContiner" class="centered">
 	<!--
 	A container that can be used to distinguish the content from the backgroud if necessary
 	-->
@@ -63,7 +63,7 @@
 				    </div>
 				 </li>
 
-				 <li class="w3-right"><a href="MealPlanner.html">Meal Planner</a></li>
+				 <li class="w3-right"><a href="MealPlanner.html" >Meal Planner</a></li>
 
 				 <li class="w3-right"><a href="GroceryList.html">Grocery List</a></li>
 			</ul>
@@ -71,20 +71,32 @@
 			<!-- Code for Navigation -->
 						
 		</div>
-
-		<div id="RecipeName" class="pfdFont">
+		
+		<!-- Div for spacing -->
+		<div style="margin-top:20px;"></div>
+		
+		<div class="pfdFont centered titleText">
+			<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+			</picture>
+		</div>
+		
+		<div id="RecipeName" class="pfdFont centered titleText">
 			<!--Name of the Recipe-->
-			<a>Chicken Cordon Bleu</a>
+			<a>Penne with Chicken and Pesto</a>
 		</div>
 
-		<div id="Image">
-			<img src="Photos/ChickenCordonBleu.jpg" height="80" width="80">
-		</div>
+		<div class="container">
+			<div id="Image" class="foodPicture roundedPic left">
+				<img src="Photos/ChickenCordonBleu.jpg">
+			</div>
 
-		<div id="Ingredient">
-			<!-- List of ingredients goes here -->
-			<ul>
-				<li>1 Cup Milk</li>
+			<div id="Ingredient" class="right smallText pfdFont">
+				<!-- List of ingredients goes here -->
+				<ul>
+					<li>1 Cup Milk</li>
 				<li>1 Cup Dry Bread Crumbs</li>
 				<li>6 skinless, Boneless Chicken Breast Halves</li>
 				<li> - Pounded to 1/4 inch Thickness</li>
@@ -94,15 +106,15 @@
 				<li>2 Tablespoon Vegetable Oil</li>
 				<li>1 Can Condensed Cream of Chicken Soup</li>
 				<li>1/2 Cup Heavy Cream</li>
-
-				
-			</ul>
+				</ul>
+			</div>
 		</div>
-
-		<div id="Directions">
-			<!--Directions of how to cook-->
-			<ol>
-				<li>Preheat oven to 350 degress F.</li>
+		
+		
+			<div id="Directions" class="centered centeredText">
+				<!--Directions of how to cook-->
+				<ol class="pfdFont">
+					<li>Preheat oven to 350 degress F.</li>
 				<li>Place Milk and bread crumbs in two separate shallow bowls.</li>
 				<li>Season the chicken with salt and petter.</li>
 				<li>Place one slice of ham and one slice of cheese on each piece of chicken.</li>
@@ -111,11 +123,9 @@
 				<li>Heat oil in a large skillet over medium-high heat. Brown rolled chicken on all sides.</li>
 				<li>In a small saucepan over medium heat, blend soup and cream; season with salt and pepper to taste. Pour over the chicken.</li>
 				<li>Bake in the preheated oven for 15 minutes, or until chicken is no longer pink and juices run clear</li>
-
-			</ol>
-			
-		</div>
-
+				</ol>
+			</div>
+		
 	</div>
 </body>
 </html>

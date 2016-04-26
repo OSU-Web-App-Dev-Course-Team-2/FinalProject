@@ -6,21 +6,22 @@
 	<!-- 
 		Title of the page 
 	-->
-		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	
-		<link href="CSS/mfStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/bigNumberStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/mfTransitionStyle.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="CSS/mfStyle.css" rel="stylesheet" type="text/css" />
+		<!--  <link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle.css" /  >-->
+		<link rel="stylesheet" type="text/css" href="CSS/nav.css">
 
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<!-- CSS and JavaScript file for Navigation -->
 </head>
 <body>
-	<div id="MainContiner">
+	<div id="MainContiner" class="centered">
 	<!--
 	A container that can be used to distinguish the content from the backgroud if necessary
-	--><div id="navigation">
+	-->
+		<div id="navigation">
 			<!--Div for Navigation-->
 			<ul class="w3-navbar w3-card-8 w3-light-grey">
 				<li><a href="HomePage.html">Home</a></li>
@@ -29,7 +30,7 @@
 				<li class="w3-dropdown-hover w3-hover-orange">
 				<a class="w3-hover-orange w3-green" href="#">Chicken <i class="fa fa-caret-down"></i></a>
 				    <div class="w3-dropdown-content w3-white w3-card-4">
-				      <a href="ChickenCordonBleu.html" >Chicken Cordon Bleu</a>
+				      <a href="ChickenCordonBleu.html">Chicken Cordon Bleu</a>
 				      <a href="PenneChicken.html" class="w3-green">Penne with Chicken and Pesto</a>
 				      
 				    </div>
@@ -62,7 +63,7 @@
 				    </div>
 				 </li>
 
-				 <li class="w3-right"><a href="MealPlanner.html">Meal Planner</a></li>
+				 <li class="w3-right"><a href="MealPlanner.html" >Meal Planner</a></li>
 
 				 <li class="w3-right"><a href="GroceryList.html">Grocery List</a></li>
 			</ul>
@@ -70,47 +71,59 @@
 			<!-- Code for Navigation -->
 						
 		</div>
-
-		<div id="RecipeName" class="pfdFont">
+		
+		<!-- Div for spacing -->
+		<div style="margin-top:20px;"></div>
+		
+		<div class="pfdFont centered titleText">
+			<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+			</picture>
+		</div>
+		
+		<div id="RecipeName" class="pfdFont centered titleText">
 			<!--Name of the Recipe-->
 			<a>Penne with Chicken and Pesto</a>
 		</div>
 
-		<div id="Image">
-			<img src="Photos/Penne-with-chicken-and-pesto.jpg" height="80" width="80">
+		<div class="container">
+			<div id="Image" class="foodPicture roundedPic left">
+				<img src="Photos/Penne-with-chicken-and-pesto.jpg">
+			</div>
+
+			<div id="Ingredient" class="right smallText pfdFont">
+				<!-- List of ingredients goes here -->
+				<ul>
+					<li>16 Ounce Package Penne Pasta</li>
+					<li>2 Tablespoons Butter</li>
+					<li>2 Tablespoons Olive Oil</li>
+					<li>4 Skinless, Boneless Chicken Breast Halves</li>
+					<li>	- Cut Into Thin Strips</li>
+					<li>2 Cloves Garlic, Minced</li>
+					<li>Salt and Pepper to Taste</li>
+					<li>1 1/4 Cups Heavy Cream</li>
+					<li>1/4 Cup Pesto</li>
+					<li>3 Tablespoons Grated Parmesan Cheese</li>
+				</ul>
+			</div>
 		</div>
-
-		<div id="Ingredient">
-			<!-- List of ingredients goes here -->
-			<ul>
-				<li>16 Ounce Package Penne Pasta</li>
-				<li>2 Tablespoons Butter</li>
-				<li>2 Tablespoons Olive Oil</li>
-				<li>4 Skinless, Boneless Chicken Breast Halves</li>
-				<li>	- Cut Into Thin Strips</li>
-				<li>2 Cloves Garlic, Minced</li>
-				<li>Salt and Pepper to Taste</li>
-				<li>1 1/4 Cups Heavy Cream</li>
-				<li>1/4 Cup Pesto</li>
-				<li>3 Tablespoons Grated Parmesan Cheese</li>
-			</ul>
-		</div>
-
-		<div id="Directions">
-			<!--Directions of how to cook-->
-			<ol>
-				<li>Bring a large pot of lightly salted water to a boil.</li>
-				<li>Add Pasta and cook for 8 to 10 minutes or until aldente; drain.</li>
-				<li>Heat butter and olive oil in a large skillet over medium heat. </li>
-				<li>Saute chicken an garlic until chicken is almost cooked.</li>
-				<li>Reduce heat and stir in salt, pepper, cream, pesto and Parmesan cheese.</li>
-				<li>Cook until chicken is no longer pink inside.</li>
-				<li>Stir in cooked pasta.</li>
-
-			</ol>
-			
-		</div>
-
+		
+		
+			<div id="Directions" class="centered centeredText">
+				<!--Directions of how to cook-->
+				<ol class="pfdFont">
+					<li>Bring a large pot of lightly salted water to a boil.</li>
+					<li>Add Pasta and cook for 8 to 10 minutes or until aldente; drain.</li>
+					<li>Heat butter and olive oil in a large skillet over medium heat.</li>
+					<li>Saute chicken an garlic until chicken is almost cooked.</li>
+					<li>Reduce heat and stir in salt, pepper, cream, pesto and Parmesan cheese.</li>
+					<li>Cook until chicken is no longer pink inside.</li>
+					<li>Stir in cooked pasta.</li>
+				</ol>
+			</div>
+		
 	</div>
 </body>
 </html>

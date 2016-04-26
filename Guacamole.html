@@ -2,22 +2,22 @@
 
 <html>
 <head>
-	<title>Guacamole</title>
+	<title> Guacamole</title>
 	<!-- 
 		Title of the page 
 	-->
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	
-		<link href="CSS/mfStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/bigNumberStyle.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="CSS/mfTransitionStyle.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="CSS/mfStyle.css" rel="stylesheet" type="text/css" />
+		<!--  <link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle.css" /  >-->
+		<link rel="stylesheet" type="text/css" href="CSS/nav.css">
 
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<!-- CSS and JavaScript file for Navigation -->
 </head>
 <body>
-	<div id="MainContiner">
+	<div id="MainContiner" class="centered">
 	<!--
 	A container that can be used to distinguish the content from the backgroud if necessary
 	-->
@@ -63,7 +63,7 @@
 				    </div>
 				 </li>
 
-				 <li class="w3-right"><a href="MealPlanner.html">Meal Planner</a></li>
+				 <li class="w3-right"><a href="MealPlanner.html" >Meal Planner</a></li>
 
 				 <li class="w3-right"><a href="GroceryList.html">Grocery List</a></li>
 			</ul>
@@ -71,19 +71,32 @@
 			<!-- Code for Navigation -->
 						
 		</div>
-
-		<div id="RecipeName" class="pfdFont">
+		
+		<!-- Div for spacing -->
+		<div style="margin-top:20px;"></div>
+		
+		<div class="pfdFont centered titleText">
+			<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+			</picture>
+		</div>
+		
+		<div id="RecipeName" class="pfdFont centered titleText">
 			<!--Name of the Recipe-->
-			<a>Guacamole</a>
+			<a>BBQ Pork for sandwiches</a>
+	
 		</div>
 
-		<div id="Image">
-			<img src="Photos/Guacamole.jpg" height="80" width="80">
-		</div>
+		<div class="container">
+			<div id="Image" class="foodPicture roundedPic left">
+				<img src="Photos/Guacamole.jpg">
+			</div>
 
-		<div id="Ingredient">
-			<!-- List of ingredients goes here -->
-			<ul>
+			<div id="Ingredient" class="right smallText pfdFont">
+				<!-- List of ingredients goes here -->
+				<ul>
 				<li>3 tablespoons chopped fresh cilantro </li>
 				<li>2 roma (plum) tomatoes, diced </li>
 				<li>1 teaspoon minced garlic </li>
@@ -92,21 +105,19 @@
 				<li>1/2 cup diced onion</li>
 				<li>3 avocados - peeled, pitted, and mashed</li>
 
-
-				
-			</ul>
+				</ul>
+			</div>
 		</div>
-
-		<div id="Directions">
-			<!--Directions of how to cook-->
-			<ol>
-				<li>In a medium bowl, mash together the avocados, lime juice, and salt. Mix in onion, cilantro, tomatoes, and garlic. </li>
-				<li>Stir in cayenne pepper. Refrigerate 1 hour for best flavor, or serve immediately.</li>
-
-			</ol>
-			
-		</div>
-
+		
+		
+			<div id="Directions" class="centered centeredText">
+				<!--Directions of how to cook-->
+				<ol class="pfdFont">
+					<li>In a medium bowl, mash together the avocados, lime juice, and salt. Mix in onion, cilantro, tomatoes, and garlic. </li>
+					<li>Stir in cayenne pepper. Refrigerate 1 hour for best flavor, or serve immediately.</li>
+				</ol>
+			</div>
+		
 	</div>
 </body>
 </html>
