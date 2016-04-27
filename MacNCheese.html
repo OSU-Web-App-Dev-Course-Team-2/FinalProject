@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title> Mac 'N' Cheese</title>
+	<!-- 
+		Title of the page 
+	-->
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	
+		<link href="CSS/mfStyle.css" rel="stylesheet" type="text/css" />
+		<!--  <link rel="stylesheet" type="text/css" href="CSS/bigNumberStyle.css" /  >-->
+		<link rel="stylesheet" type="text/css" href="CSS/nav.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS and JavaScript file for Navigation -->
+</head>
+<body>
+	<div id="MainContiner" class="centered">
+	<!--
+	A container that can be used to distinguish the content from the backgroud if necessary
+	-->
+		<div id="navigation">
+			<!--Div for Navigation-->
+			<ul class="w3-navbar w3-card-8 w3-light-grey">
+				<li><a href="HomePage.html">Home</a></li>
+				
+
+				<li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-blue" href="#">Chicken <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="ChickenCordonBleu.html">Chicken Cordon Bleu</a>
+				      <a href="PenneChicken.html">Penne with Chicken and Pesto</a>
+				      
+				    </div>
+				 </li>
+
+				 <li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-blue" href="#">Beef <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="Bulgogi.html">Bulgogi</a>
+				      <a href="SteakSirloin.html">Steak Sirloin</a>
+				      
+				    </div>
+				 </li>
+
+				 <li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-blue" href="#">Pork <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="BBQPork.html">BBQ Pork</a>
+				      <a href="TangyPork.html">Tangy Grilled Pork Tenderloin</a>
+				      
+				    </div>
+				 </li>
+
+				 <li class="w3-dropdown-hover w3-hover-blue">
+				<a class="w3-hover-blue w3-blue" href="#">Vegie <i class="fa fa-caret-down"></i></a>
+				    <div class="w3-dropdown-content w3-white w3-card-4">
+				      <a href="Guacamole.html">Guacamole</a>
+				      <a href="MacNCheese.html" class="w3-blue">Mac and Cheese</a>
+				      
+				    </div>
+				 </li>
+
+				 <li class="w3-right"><a href="MealPlanner.html" class="w3-hover-blue">Meal Planner</a></li>
+
+				 <li class="w3-right"><a href="GroceryList.html" class="w3-hover-blue">Grocery List</a></li>
+			</ul>
+
+			<!-- Code for Navigation -->
+						
+		</div>
+		
+		<!-- Div for spacing -->
+		<div style="margin-top:20px;"></div>
+		
+		<div class="pfdFont centered titleText">
+			<picture>
+					<source srcset="Photos/LogoSmall.png" media="(max-width:640px)">
+					<source srcset="Photos/LogoBig.png">
+					<img src="Photos/LogoBig.png" alt="Man Food" class="centered">
+			</picture>
+		</div>
+		
+		<div id="RecipeName" class="pfdFont centered titleText">
+			<!--Name of the Recipe-->
+			<a>Mac 'N' Cheese</a>
+	
+		</div>
+
+		<div class="container">
+			<div id="Image" class="foodPicture roundedPic left">
+				<img src="Photos/mnc.jpg">
+			</div>
+
+			<div id="Ingredient" class="right smallText pfdFont">
+				<!-- List of ingredients goes here -->
+				<ul>
+					<li>1 (8 ounce) package elbow macaroni </li>
+					<li>1 (8 ounce) package shredded sharp Cheddar cheese </li>
+					<li>1 (12 ounce) container small curd cottage cheese </li>
+					<li>1 (8 ounce) container sour cream</li>
+					<li>1/4 cup grated Parmesan cheese </li>
+					<li>salt and pepper to taste </li>
+					<li>1 cup dry bread crumbs</li>
+					<li>1/4 cup butter, melted</li>
+
+				</ul>
+			</div>
+		</div>
+		
+		
+			<div id="Directions" class="centered centeredText">
+				<!--Directions of how to cook-->
+				<ol class="pfdFont">
+					<li>Preheat oven to 350 degrees F (175 degrees C). </li>
+					<li>Bring a large pot of lightly salted water to a boil, add pasta, and cook until done; drain.</li>
+					<li>In 9x13 inch baking dish, stir together macaroni, shredded Cheddar cheese, cottage cheese, sour cream, Parmesan cheese, salt and pepper.</li>
+					<li>In a small bowl, mix together bread crumbs and melted butter. Sprinkle topping over macaroni mixture.</li>
+					<li>Bake 30 to 35 minutes, or until top is golden.</li>
+				</ol>
+			</div>
+		
+	</div>
+</body>
+</html>
